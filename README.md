@@ -8,6 +8,8 @@ Ordinal case-sensitive comparison is used since I didn't have need for anything 
 The implementation can be improved to use case-insensitive and culture-aware comparison as well.
 However, handling Unicode glyphs (e.g., diacritics) can be tricky since multiple characters may represent a single letter, and the implementation works with individual `char` values for memory optimization.
 
+The collection could have implemented `IEnumerable<string>` and `IReadOnlyCollection<string>`. The easiest way to do that is to keep all added items in a separate `List<T>` but it is memory-consuming. Iterating over compacted double-array trie hardly makes any sense so this part is omitted for now.
+
 ## References
 None of the references contains the actual implementation, despite the names. But they were used as the inspiration for the algorithm.
 
