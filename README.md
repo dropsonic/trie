@@ -1,4 +1,8 @@
 # trie
+
+[![.NET Workflow](https://github.com/dropsonic/trie/actions/workflows/dotnet.yml/badge.svg)](https://github.com/dropsonic/trie/actions/workflows/dotnet.yml)
+
+## Description
 Double-array implementation of a trie (prefix tree) in C#.
 
 Look-up is ![O(1)](https://render.githubusercontent.com/render/math?math=O(1)) on average and ![O(k)](https://render.githubusercontent.com/render/math?math=O(k)) in the worst case, and insertion is about ![O(k^2)](https://render.githubusercontent.com/render/math?math=O(k^2)) in the worst case, where ![k](https://render.githubusercontent.com/render/math?math=k) is the number of input symbols.
